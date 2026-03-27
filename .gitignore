@@ -1,3 +1,29 @@
-dataset/
-*.mp4
+# IntelliJ / IDE
+.idea/
+*.iml
 
+# Build output
+out/
+target/
+build/
+
+# Python / misc
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Dataset videos only
+dataset/raw_videos/**/*.mp4
+dataset/raw_videos/**/*.avi
+dataset/raw_videos/**/*.mov
+dataset/raw_videos/**/*.mkv
+
+# Generated ML data
+dataset/extracted_frames/**
+dataset/patches/**
+
+# Optional: large trained models
+*.zip
